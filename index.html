@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Rock Paper Scissors Game</title>
+</head>
+<body>
+    <body>
+        <header class="header">
+          <h1 class="title">ROCK PAPER SCISSORS</h1>
+        </header>
+
+        <main class="main">
+          <div class="scoreboard">
+            <h2 class="score-info" id="scoreInfo">Choose your weapon</h2>
+            <h3 class="score-message" id="scoreMessage">
+              First to score 5 points wins the game
+            </h3>
+            <div class="scores-container">
+              <div class="score-box">
+                <div class="sign" id="playerSign">❔</div>
+                <p class="score" id="playerScore">Player: 0</p>
+              </div>
+              <div class="score-box">
+                <div class="sign" id="computerSign">❔</div>
+                <p class="score" id="computerScore">Computer: 0</p>
+              </div>
+            </div>
+          </div>
+          <div class="buttons">
+            <button class="btn btn-square" id="rockBtn">
+              <div class="sign">✊</div>
+              <p>Rock</p>
+            </button>
+            <button class="btn btn-square" id="paperBtn">
+              <div class="sign">✋</div>
+              <p>Paper</p>
+            </button>
+            <button class="btn btn-square" id="scissorsBtn">
+              <div class="sign">✌</div>
+              <p>Scissors</p>
+            </button>
+          </div>
+        </main>
+        <div class="modal" id="endgameModal">
+          <p class="modal-title" id="endgameMsg"></p>
+          <button class="btn btn-restart" id="restartBtn">Play again</button>
+        </div>
+        <div class="overlay" id="overlay"></div>
+
+
+         <!-- Footer Section -->
+    <footer>
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="contact-section-header">
+                <h2>Let's connect...</h2>
+            </div>
+            <div class="contact-links">
+                <a id="profile-link" href="https://github.com/OnyangoOmondie97" target="_blank" class="btn contact-details"><i class="fab fa-github"></i> GitHub</a>
+                <a id="profile-link" href="https://www.linkedin.com/in/keith-omondi/" target="_blank" class="btn contact-details"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="mailto:keithjunior78@gmail.com" class="btn contact-details"><i class="fas fa-at"></i> Send a mail</a>
+            </div>
+        </section>
+        <section id="copyright" class="copyright-section">
+            <div class="copyright">
+                © 2023 Keith's Portfolio. All rights reserved.
+            </div>  
+        </section>
+    
+    
+        
+    </footer>
+
+        <script src="game.js"></script>
+    </body>
+    
+</body>
+</html>
