@@ -2,8 +2,8 @@
 
 Dive into the **Rock-Paper-Scissors** game! This interactive web-based game allows you to challenge the computer. It's a race to 5 points - do you have what it takes?
 
-# ![Game Screenshot](path-to-your-screenshot.png) 
-(Note: Replace `path-to-your-screenshot.png` with a path to an actual screenshot)
+# ![Game Screenshot](../Screenshot%202023-10-30%20150619.png) 
+
 
 ## 🔥 How to Play 🔥
 1. 🤜 Choose your move: Rock, Paper, or Scissors.
