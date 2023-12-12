@@ -8,51 +8,44 @@
     <title>Rock Paper Scissors Game</title>
 </head>
 <body>
-    <body>
-        <header class="header">
-          <h1 class="title">ROCK PAPER SCISSORS</h1>
-        </header>
+    <header class="header">
+      <h1 class="title">ROCK PAPER SCISSORS</h1>
+    </header>
 
-        <main class="main">
-          <div class="scoreboard">
-            <h2 class="score-info" id="scoreInfo">Choose your weapon</h2>
-            <h3 class="score-message" id="scoreMessage">
-              First to score 5 points wins the game
-            </h3>
-            <div class="scores-container">
-              <div class="score-box">
-                <div class="sign" id="playerSign">❔</div>
-                <p class="score" id="playerScore">Player: 0</p>
-              </div>
-              <div class="score-box">
-                <div class="sign" id="computerSign">❔</div>
-                <p class="score" id="computerScore">Computer: 0</p>
-              </div>
-            </div>
+    <main class="main">
+      <div class="scoreboard">
+        <h2 class="score-info" id="scoreInfo">Choose your weapon</h2>
+        <h3 class="score-message" id="scoreMessage">
+          First to score 5 points wins the game
+        </h3>
+        <div class="scores-container">
+          <div class="score-box">
+            <div class="sign" id="playerSign">❔</div>
+            <p class="score" id="playerScore">Player: 0</p>
           </div>
-          <div class="buttons">
-            <button class="btn btn-square" id="rockBtn">
-              <div class="sign">✊</div>
-              <p>Rock</p>
-            </button>
-            <button class="btn btn-square" id="paperBtn">
-              <div class="sign">✋</div>
-              <p>Paper</p>
-            </button>
-            <button class="btn btn-square" id="scissorsBtn">
-              <div class="sign">✌</div>
-              <p>Scissors</p>
-            </button>
+          <div class="score-box">
+            <div class="sign" id="computerSign">❔</div>
+            <p class="score" id="computerScore">Computer: 0</p>
           </div>
-        </main>
-        <div class="modal" id="endgameModal">
-          <p class="modal-title" id="endgameMsg"></p>
-          <button class="btn btn-restart" id="restartBtn">Play again</button>
         </div>
-        <div class="overlay" id="overlay"></div>
+      </div>
+      <div class="buttons">
+        <button class="btn btn-square" id="rockBtn">Rock</button>
+        <button class="btn btn-square" id="paperBtn">Paper</button>
+        <button class="btn btn-square" id="scissorsBtn">Scissors</button>
+      </div>
+      <div id="result" class="result-container">
+        <p id="roundResult"></p>
+        <p id="runningScore">Player: 0 | Computer: 0</p>
+      </div>
+    </main>
+    <div class="modal" id="endgameModal">
+      <p class="modal-title" id="endgameMsg"></p>
+      <button class="btn btn-restart" id="restartBtn">Play again</button>
+    </div>
+    <div class="overlay" id="overlay"></div>
 
-
-         <!-- Footer Section -->
+     <!-- Footer Section -->
     <footer>
         <!-- Contact Section -->
         <section id="contact" class="contact-section">
@@ -70,13 +63,8 @@
                 © 2023 Keith's Portfolio. All rights reserved.
             </div>  
         </section>
-    
-    
-        
     </footer>
 
-        <script src="game.js"></script>
-    </body>
-    
+    <script src="game.js"></script>
 </body>
 </html>
